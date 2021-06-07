@@ -156,7 +156,7 @@ list2 = [[1, 0.8415], [2, 0.9093], [3, 0.1411]]
 
 list3 = [[1, 1], [2, 0], [4, 1.5]]
 
-list4 = [[1, 0.7651], [1.3, 0.62], [1.6, 0.4554], [1.9, 0.2818], [2.2, 0.1103]]
+#list4 = [[1, 0.7651], [1.3, 0.62], [1.6, 0.4554], [1.9, 0.2818], [2.2, 0.1103]]
 
 x = 2.5
 
@@ -223,7 +223,8 @@ def bvector(list):
 
 def Driver(list, x):
 
-    a = input("What Method do you want ? \n1- Linear \n2- Polynomial \n3- Lagrange \nElse- Neville\n")
+    a = input("X = 2,5 \nWhat Method do you want ? \n1- Linear \n2- Polynomial \n3- Lagrange \nElse- Neville\n")
+
 
     if a == "1":
         print("Linear: y = " + str(linear(list, x)))
@@ -234,17 +235,5 @@ def Driver(list, x):
     else:
         print("Neville: y = " + str(Neville(list, x)))
 
-
-# print_vector(matrix_vector_mul(inverse_by_gauss(Amatrix(list)), bvector(list)))
-
-# print(polynomial(matrix_vector_mul(inverse_by_gauss(Amatrix(list)), bvector(list)), x))
-
-# print_matrix(Amatrix(list))
-
-# print(linear(list, x))
-
-#print(Lagrange(list3, 3))
-
-#print(Neville(list4, 1.5))
 
 Driver(list1, x)
